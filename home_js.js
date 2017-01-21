@@ -10,7 +10,7 @@ window.location("#wwww");
 }
 function homefun()
 {
-window.location("home.html");
+window.location("#ccc");
 
 }
 
