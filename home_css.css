@@ -3,13 +3,50 @@ div#div2
 -webkit-transform:rotate(270deg);
 transform:rotate(270deg);
 }
-/*div#div2
+div#top
 {
--webkit-transform:rotate(90deg);
-transform:rotate(90deg);
+background-color: black;
 }
-div#div2
+.button
 {
--webkit-transform:rotate(90deg);
-transform:rotate(90deg);
+color: white;
+background-color: black;
+padding: 3px 16px;
+border-radius: 8px;
+
+}
+.Home
+{
+transition-duration: 0.4s;
+}
+.Home:hover
+{
+background-color: lightblue;
+}
+.About
+{
+transition-duration: 0.4s;
+}
+.About:hover
+{
+background-color: lightblue;
+}
+.Contact
+{
+transition-duration: 0.4s;
+}
+.Contact:hover
+{
+background-color: lightblue;
+}
+.imgc
+{
+border-radius: 32px;
+}
+/*div#sec
+{
+background-color: yellow;
 }*/
+
+
+
