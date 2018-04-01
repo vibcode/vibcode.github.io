@@ -526,7 +526,7 @@
 			  </div>
 			  <!-- Contact Form -->
 			  <div class="col-md-6 contact">
-			     <form role="form">
+			     <form role="form" action="javascript:sendMail();" method="post" enctype="text/plain">
 				            <!-- Name -->
                             <div class="row">
                                 <div class="col-md-6">
@@ -544,11 +544,11 @@
                             </div>
 							<!-- Message Area -->
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
+                                <textarea class="form-control" id="body" placeholder="Write you message here..." style="height:232px;"></textarea>
                             </div>
 							<!-- Subtmit Button -->
-                            <button type="submit" class="btn btn-send">
-                                Functionality to be added
+                            <button type="submit" class="btn btn-send" value="Send">
+                                Send Message
                             </button>
                         </form>
 			  </div>
@@ -559,11 +559,10 @@
               <div class="col-md-12">
                 <ul class="social-buttons">
                   <li><a href="https://www.facebook.com/vibhor.porwal" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-                  <!-- <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li> -->
                   <li><a href="https://twitter.com/vibhor_99" class="social-btn"><i class="fa fa-twitter"></i></a></li>
                   <li><a href="https://www.reddit.com/user/VibhorPorwal/" class="social-btn"><i class="fa fa-reddit"></i></a></li>
-				  <li><a href="https://github.com/vibcode" class="social-btn"><i class="fa fa-github"></i></a></li>
-				  <li><a href="https://www.linkedin.com/in/vibhor-porwal-b15644132/" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+				          <li><a href="https://github.com/vibcode" class="social-btn"><i class="fa fa-github"></i></a></li>
+				          <li><a href="https://www.linkedin.com/in/vibhor-porwal-b15644132/" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -658,5 +657,13 @@
     });
     </script>
 
+    <script type="text/javascript">
+      function sendMail() {
+        var x = document.getElementById("body").innerHTML;
+        window.open('mailto:vibhorp@iitk.ac.in?subject=Greetings&body=Enter the message here');
+      }
+    </script>
+
     </body>
 </html>
+
